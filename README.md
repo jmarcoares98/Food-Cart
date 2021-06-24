@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# To run the app
+
+You have to setup two json servers. Install json-server globally `npm install -g json server`.
+
+## start json server by providing the json file
+
+My json files are food.json and users.json. In one terminal write `json-server --watch src/assets/data/users.json` (this would automatically watch through port 3000) and in another terminal write `json-server --watch src/assets/data/food.json -p 4000`
+
+## Now run the app
+
+You can run the app with another terminal by doing `ng serve -o` and you can login through email: frankocean@email.com password: godspeed
